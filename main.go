@@ -35,7 +35,7 @@ func onReady() {
 			case <-mURL.ClickedCh:
 				open.Run("http://cx.skycoin.net")
 			case <-vs.ClickedCh:
-				runViscript()
+				go runViscript()
 			case <-mQuit.ClickedCh:
 				systray.Quit()
 				log.Println("Quit now...")
