@@ -159,8 +159,6 @@ else
     pv "Skywire directory verified"
 fi
 
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 # Set the Skycoin path from github
 githubSkycoinPath="github.com/skycoin/skycoin"
