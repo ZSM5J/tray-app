@@ -14,7 +14,7 @@ func main() {
 }
 
 func onReady() {
-	content, err := ioutil.ReadFile("assets/sc.png")
+	content, err := ioutil.ReadFile("sc.png")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -26,7 +26,7 @@ func onReady() {
 
 	go func() {
 		mURL := systray.AddMenuItem("cx sandbox", "cx-web")
-		vs := systray.AddMenuItem("viscript", "cx-web")
+		vs := systray.AddMenuItem("viscript", "vs")
 		mQuit := systray.AddMenuItem("Quit", "Quit the whole app")
 		systray.AddSeparator()
 
